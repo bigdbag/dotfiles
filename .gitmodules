@@ -12,4 +12,7 @@
 	url = git@github.com:rbenv/rbenv.git
 [submodule ".jenv"]
 	path = .jenv
-	url = git@github.com:gcuisinier/jenv.git
+	url = git@github.com:jenv/jenv.git
+[submodule ".nvm"]
+	path = .nvm
+	url = git@github.com:nvm-sh/nvm.git

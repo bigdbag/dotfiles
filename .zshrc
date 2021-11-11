@@ -6,8 +6,6 @@ alias cdw='cd $WINDOWS_HOME'
 
 alias cds='cd $HOME/Source'
 
-export EDITOR=/usr/bin/vim
-
 export ADOTDIR=$HOME/.zsh/bundle
 
 export NVM_DIR="$HOME/.nvm"
@@ -62,5 +60,10 @@ eval "$(jenv init -)"
 source $HOME/.zsh/bundle/bin/antigen.zsh
 
 antigen use oh-my-zsh # Load the oh-my-zsh's library.
+antigen bundle git
+
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
 antigen theme agnoster # Load the theme.
 antigen apply # Tell antigen that you're done.
