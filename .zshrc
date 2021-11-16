@@ -14,9 +14,9 @@ export NVM_DIR="$HOME/.nvm"
 
 export WINDOWS_HOME=/mnt/c/Users/shake
 
-export JAVA_HOME=$(/usr/libexec/java_home)
+#export JAVA_HOME=$(/usr/libexec/java_home)
 
-export JAVA_HOME=/usr/lib/jvm/java-16-oracle
+#export JAVA_HOME=/usr/lib/jvm/java-16-oracle
 
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/mysql/lib
 
@@ -24,7 +24,7 @@ export PYENV_ROOT=$HOME/.pyenv
 
 export RBENV_ROOT=$HOME/.rbenv
 
-export JENV_ROOT=$HOME/.jenv
+#export JENV_ROOT=$HOME/.jenv
 
 export PYTHONPATH='.'
 
@@ -51,11 +51,11 @@ export PATH=$PATH:/usr/local/mysql/bin
 export PATH=$PATH:/usr/local/go/bin
 
 export PATH=$PATH:/mnt/c/Program\ Files/Docker/Docker/resources/bin
-
-eval "$(rbenv init -)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-eval "$(jenv init -)"
+export PATH="$PATH:$(yarn global bin)"
+#eval "$(rbenv init -)"
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
+#eval "$(jenv init -)"
 
 source $HOME/.zsh/bundle/bin/antigen.zsh
 
